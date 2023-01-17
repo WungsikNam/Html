@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--한국말로 컴파일 해주세요 --> 
+<head>
+    <meta charset="UTF-8">
+    <!--explorer 여러버전 혹시 낮은 버전 동작이 될 때 최신 익스플로러로 랜더링해줌 -->
+    <!--엣지버전부터 크롬 v8엔진사용 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport가있어야 모바일 디바이스가 모바일 페이지를 제대로 출력
+    하이브리드 =네이티브앱 +웹앱
+     요소= 태그 = 노드 
+    1)인라인 - 크기없음,자동줄바꿈없음 <br/> <br>이것도 가능한데 리액트에선 오류나니깐 습관을 <br/>이렇게 쓰자 
+    2) 블록 - 자체 크기, 자동으로 줄바꿈이 됨   
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우 사이즈</title>
+
+    <style> 
+.tag{
+display :inline-block; /*컨텐츠를 감싸준다.*/
+background-color: aqua;
+font-size: 40px;
+padding: 16px;/*상화좌우의 안쪽 여백*/
+margin-top: 16px;
+margin-bottom: 30px;
+}
+div{
+   width: 200px;
+   height: 200px;
+   background-color: blueviolet;
+   border: 2px solid black; 
+}
+    </style>
+</head>
+
+<body> 
+ <div class= "tag">윈도우 사이즈</div> 
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <script>
+    window.addEventListener('resize',()=>{
+    console.log(`window.screen : ${window.screen.width},${window.screen.height}`
+    );//출력할땐 이걸 써줌  
+    });/*윈도우 창이 바뀔때마다 사이즈가 바뀌는것을 자스로 설정함 
+            모니터화면을 왔다갔다 해도 움직이지 않음 */
+//arrow funtion 찾아보기 
+//screen은 모니터화면크기 이다.  
+
+console.log(
+`window.screen: ${window.screen.width}, ${window.screen.height}`
+    );
+    //url과 탭 세션아이디를 쿠키에 저장함) 전체적인 브라운저 크기임 
+    console.log(
+    `window.outer:${window.screen.width},${window.outerheight}`
+    );
+    //inner는 웹페이지+스크롤바 
+    console.log(
+    `window.inner:${window.screen.width}, ${window.innerheight}`
+    );
+    console.log(
+    `document(문서만):${Document.DocumentElement.clientwidth}, ${document.documentElement.clientHeight}`
+    );//스크롤바가 제외된 문서만 사이즈 
+</script>
+</body>
+</html>
