@@ -1,0 +1,23 @@
+div{ 
+width: 100px;
+height: 100px;
+border: 1px dotted black;
+margin-bottom: 20px;
+}
+
+span{
+    width: 100px;
+    height: 100px;
+background-color: red;
+}/*span은 자체크기를 가지지 못한다. 
+    왜? 인라인이라서 */
+
+div {
+background-color: red;
+display: inline-block; /* 수직으로 놓는것 */
+}
+
+span {
+background-color: blue;
+display: inline-block; /*수직*/
+}
