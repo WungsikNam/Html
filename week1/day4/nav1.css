@@ -1,0 +1,52 @@
+/* 
+   우리가 패딩을 줬을 때 높이와 너비가 그 패딩을 포함했을 때도
+    동일한 높이와 너비가 되도록 함
+*/
+
+*{
+    box-sizing: border-box;
+    background-color: black;
+ }
+ 
+ body{
+    font-family:'Courier New', Courier, monospace; /*폰트를 줄땐 이렇게*/
+    margin : 0px;
+    color : white;
+ }
+ 
+ a{
+    color : white;
+    text-decoration: none; /*밑줄 및 */
+ }
+ 
+ ul{
+    list-style : none;
+    padding-left:0px;
+   
+ }
+ 
+ .navbar{
+    display : flex; /*  정렬을 하겠다는 거 */
+    justify-content: space-between;
+    padding : 20px;
+    align-items : center;
+    background-color: aquamarine;
+ }
+ 
+ .navbar_menu{
+    display : flex; /*정렬*/
+    padding : 20px; /*내부여백을 20px만큼 떨어 뜨려라 */
+ }
+ 
+ .navbar_menu_item{
+     padding : 8px 12px; /*내부여백 상하를 8,12px 만큼 떨어뜨리자 */
+     margin: 0 4px;
+     cursor: pointer;/* 손가락 모양으로 바뀜 */
+     border-radius: 4px; /*가생이 */
+    }
+    
+    .navbar_menu_item:hover{ /* 마우스  올렸을때 컬럽바뀌는 거 */
+    background-color: rgb(221, 215, 250);
+    }
+
+

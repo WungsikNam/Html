@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript"> 
+   /*  funtion hap(a1,a2) { //a1 =1 , a2=2 -> 자바에서는 call by value
+         console.log(a1);
+    }*/
+//3번함수 - 일급함수라고 함 *** 
+    const hap1 =function(a1,a2){
+        const result =a1+a2
+        return result
+    }
+  //af
+    const hap2 = (a1,a2) =>{
+        const result =a1+a2
+        return result
+    }
+ 
+    //af 파라미터가 하나일 경우에는 괄호를 생략 할 수 있다. 
+    const hap3 = a1=> {
+        const result =a1
+        return result
+    }
+// 화면에 출력해보기 
+
+    document.write.hap1()
+    document.write.hap2()
+    document.write.hap3()
+
+    hap() // underde
+    hap(1,2)
+    hap(3)
+    </script>
+</body>
+</html>
+<!--
+    -Arrow Funtion?
+    :기존의 익명함수를 좀 더 쓰기 쉽게 축약한 형태임 
+    :내부로 전달되는 파라미터가 하나면 괄호는 생략가능함 
+
+    자바스크립트는 같은 이름의 함수를 중복정의 못함
+    왜냐면 메소드 오버로딩이 없음
+    결론: 함수의 이름 다 다르게 해야함 무조건 
+-->

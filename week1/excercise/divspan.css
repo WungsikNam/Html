@@ -1,0 +1,19 @@
+
+
+span{
+border: solid 1px black;
+width:100px;
+height: 100px;
+background-color: red;
+display: flex;
+justify-content: space-around;
+}
+
+div{
+    border: solid 1px black;
+    background-color: blue;
+    width:100px;
+    height: 100px;
+    display: inline-block; /*  펼쳐짐  */
+justify-content: space-around;
+}

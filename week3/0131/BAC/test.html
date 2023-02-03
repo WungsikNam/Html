@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+    box-sizing: border-box; 
+  }
+   label {
+   font-size : 20px;
+   }
+
+    label.title{
+        margin-left: 15px;
+    }
+    label.content{
+        margin-left: 15px;
+    }
+    div{
+            width : 600px;
+            height : 400px;
+    } 
+    button{
+        margin: 0 100px;
+    }
+    #mem_id1{
+        margin-left: 25px;
+    }
+    #mem_id2{
+        height: 100px;
+        margin-left: 25px;
+    }
+</style>
+</head>
+<body>
+    <h1>포트폴리오 문제 </h1>
+    <form action="insert.no" method="post">
+        <fieldset>
+
+            <legend>공지사항 작성하기</legend>
+            <div>
+                <label class="title">제목</label>
+                <input type="text" id="mem_id1" name="title" placeholder="아이디를 입력하세요" required>
+                <br/>
+                <br/>
+                
+                <label class="content">내용</label>
+                <input type="text" id="mem_id2" name="content" placeholder="내용을 입력하세요" required>
+                <br/>
+                
+                <label class="file">첨부파일</label>
+                <input type="file" name="uploadFile" placeholder="프로필사진">
+                <br />
+                
+                <ul>
+            <button onclick="join()">작성하기</button>
+        </ul>
+    </div>
+</fieldset>
+</form>
+</body>
+</html>

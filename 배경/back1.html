@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지1</title>
+    <style>
+*{
+    border: 1px solid;
+}
+body{
+    height: 3000px
+    
+}
+div{
+    width: 400px;
+    height: 800px; /*크기가 커지면 반복되는데 그게 싫어 그래서 */
+background-repeat: no-repeat; /*수평반복 repeat-x  수직반복 repeat-y*/
+background-color: red;/*배경투명도*/
+background-size: auto;/*auto랑 다르다는것  비율유지, 요소의 더넓은 너비에 맞춤 해상도는 떨어짐 */
+/*비율은유지 요소의 더 짧은 너비에 맞춤 */
+background-image: url("../images/apple_280x280.jpg")/*위에크기에 맞춰서*/
+/*background-attachment:fixed  스크롤은 되는데 이미지 스타핏 */
+}
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, unde? Magnam harum facilis unde odio libero eaque officia, ducimus similique!</p>
+</body>
+</html>

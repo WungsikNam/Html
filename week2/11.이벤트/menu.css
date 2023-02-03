@@ -1,0 +1,48 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li{
+width: 150px;
+height: 50px;
+border: 1px solid gold;
+list-style: none;
+text-align: center;
+background-color: aqua;
+}
+
+li.on a{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    font:bold 16px/1.25 "arial";
+}
+
+.ul mousehover{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.list {
+    display: flex;
+}

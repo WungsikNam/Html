@@ -1,0 +1,27 @@
+html,body{
+    height:100%
+}
+.container{/*  ctrl shift / 
+                */
+    /*height: 100%;/*있을때 없을때 다름 해봐  */
+    /*v  보이는 높이에 100퍼를 모두 쓰겠단 뜻 *//*height: 100vh*/
+/* 컨테이너 부모(body)의 100% 채우겠다. */
+    background-color: beige;
+    display: flex; /* 야 너 플렉스박스야  */
+    /* 왼쪽에서 오른쪽으로 정렬  */
+
+    flex-direction: row;  /*수평으로 할건지 수직으로 할건지 정하는 것 */
+    justify-content: space-between; /* 스페이스를 줘  */
+    /*justify-content: space-around; /* 다다닥 붙여  */
+    /*flex-direction: column-reverse;/*배열을 수직으로 거꾸로 */
+    /*flex-direction: row; 기본값 */
+    /*flex-direction: column;*/
+    flex-wrap: nowrap;/*띄어쓰기 한칸 ??? */
+}
+
+.item {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}

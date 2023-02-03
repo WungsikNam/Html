@@ -1,0 +1,51 @@
+<!--애니메이션
+https://developer.mozilla.org/ko/docs/Web/CSS/transform-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+<style>
+.box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px;/*그래야 나눠놓아짐*/
+    transition-timing-function: linear;/*스무스 해짐 */
+       }
+
+       /*
+       linear 
+       easy-in
+       easy-out 이정도 기억하자 
+       */
+
+       .box1:hover{background-color: rgb(240, 126, 126);
+        cursor: pointer;
+        transition-duration: 300ms ;
+        border-radius: 50%;/* 원으로 둥글게 ㅋ*/
+        transition: all 500ms ease;
+    }
+    .box2:hover{background-color: rgb(240, 126, 126);
+        cursor: pointer;
+     }
+    .box3:hover{background-color: rgb(240, 126, 126);
+        border-radius: 30%;
+        transform: translateX(300px);
+        border-radius: 50%;
+        transition: 2s ease-in-out;
+     }
+
+</style>
+</head>
+<body>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>    
+
+</body>
+</html>
