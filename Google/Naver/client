@@ -4,9 +4,17 @@ V3dY425uFY0UMm3FJFLc
 Client Secret 
 BJaKqzpSwh
 
+Google 클라이언트 ID 구글에서 제공하는 인증 로그인 
+AIzaSyBD-4N9Oq9oiL_kLNY2nNRxCLsHFNP781g 
+
+ID : 221409854620-u19kfjel59c0b3cndqk60cqp6ldkerca.apps.googleusercontent.com
+PW : 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
+
 프로젝트이름아래에서 
 npm init -y 엔터 
 하면 package.json파일이 생성됨
 이파일에는 의존성주입이 들어감
 decDependencies --개발자모드 의존성 주압- 테스트서버배포 괜찮아
 dependencies-운영서버에는 포함되면 안돼 
+
+
